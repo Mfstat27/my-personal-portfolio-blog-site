@@ -3,13 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "babel": "^6.23.0",
+    "canvas": "^2.11.0",
+    "clsx": "^1.2.1",
+    "pdfjs-dist": "^3.4.120",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.8.2",
+    "react-scripts": "^2.1.3",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4",
+    "webpack": "^4.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +43,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-plugin-react-require": "^3.1.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^5.6.0",
+    "react-pdf": "^5.7.2",
+    "url-loader": "^4.1.1"
   }
 }
