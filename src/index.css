@@ -270,9 +270,13 @@ footer {
   margin-top: 100px;
 }
 
+.contact-form label, input {
+  display: block;
+}
+
 .contact-form input[type=text], input[type=email], input[type=tel], textarea {
-  width: 50%; 
-  padding: 12px; 
+  width: 100%; 
+  padding: 15px 100px;
   border: 1px solid #ccc; 
   border-radius: 4px; 
   box-sizing: border-box; 
@@ -291,6 +295,13 @@ footer {
 .contact-form input:invalid:hover {
   -webkit-text-fill-color: rgb(224, 86, 86);
   border: 2px solid rgb(224, 86, 86);
+}
+
+
+.contact-form input:valid:focus, textarea:valid {
+  -webkit-text-fill-color: var(--background-overlay);
+  border: 2px solid rgb(151, 207, 142);
+  font-weight: 900;
 }
 
 .contact-form input:valid, textarea:valid {
@@ -335,6 +346,12 @@ input:-webkit-autofill:focus {
   background-color: #ccc;
 }
 
+.contact-form .display-message {
+  padding-top: 15px;
+}
+.contact-form .error {
+  color: red;
+}
 /* Projects */
 
  .projects .cards {
@@ -441,8 +458,9 @@ input:-webkit-autofill:focus {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #444444;
-  margin-top: 15px;
+  color: var(--background-overlay);
+  margin: 15px 0;
+  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
